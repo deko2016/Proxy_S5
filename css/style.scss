@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-collapse{
+        margin-left: 8rem;
+    }
+    .nav-right .dropdown{
+        margin-left: 2rem;
+    }
+    #navbar-expand{
+        margin-left: 4rem;
+    }
+    .nav-right{
+        display: flex;
+        align-items: center !important;
+        
+    }
+    .lng-img{
+        align-items: center;
+        display: flex;
+    }
+    .menu{
+        display: flex;
+        margin-left: -22.6rem;
+     }
+    .dropdown{
+        display: flex;
+        align-items: center;
+        .arrow-btn{
+            width: 10px;
+            height: 8px;
+        }
+    }
+    .navbar-collapse{
+             
+         ul li a{
+            color: #000000;
+            font-weight: bold;
+            font-family: sans-serif;
+            margin-left: 3.8rem;
+            position: relative;
+            left: -125%;
+            
+         }
+    }
+    .new-png{
+        position: absolute;
+        top: 3px;
+        right: 164px;
+    }
+    #nav-item1{
+        margin-right: 39px;
+    }
+    .navbar{
+        align-items: center;
+        background-color: #F8FBFD;
+    }
+    .logo-box a{
+        margin-left: -45px;
+    }
+    .login-box{
+        display: flex;
+        .all{
+            display: flex;
+        }
+        .login{
+            color: #000;           
+            font-weight: 600;
+            margin-right: 20px;
+        }
+        .register{
+            background-color: #3c7fff;
+            color: white;
+            border-radius: 4px;
+            width: 105px;
+            height: 40px;
+            text-align: center;
+            padding: 5.4px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .all{
+            display: flex;
+        }
+    }
+    
+
+}
+
+.banner{
+    padding: 100px 0;
+    justify-content: center;
+    background: url(https://api.pyproxy.com/static/index/img/index/img_banner1.png) #f8fcfe center;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    text-align: left;
+    #banner-text{
+        margin-left: 8rem;
+    }
+   
+    .resources{
+        color: #3c7fff;
+        font-weight: bold;
+    }
+    .t-title{
+        font-size: 48px;
+        max-width: 521px;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        span{
+            color: #3c7fff;
+        }
+    }
+    .t-title1{
+        margin-top: 20px;
+        font-size: 14px;
+        color: #c8cbd4;
+    }
+    .button-trial{
+        display: inline-block;
+        margin-top: 1rem;
+    }
+    .trial-plan{
+        display: inline-block;
+        width: 180px;
+        height: 50px;
+        color: white;
+        transition: all .2s;
+        font-family: 'Ubuntu', sans-serif;
+        &:hover{
+            transform: scale(1.08);
+        }
+
+    }
+    
+}
+
+.banner-card{
+    .all{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cardd{
+        display: flex;
+    }
+}

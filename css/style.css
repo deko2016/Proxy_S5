@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar-collapse {
+  margin-left: 8rem;
+}
+header .nav-right .dropdown {
+  margin-left: 2rem;
+}
+header #navbar-expand {
+  margin-left: 4rem;
+}
+header .nav-right {
+  display: flex;
+  align-items: center !important;
+}
+header .lng-img {
+  align-items: center;
+  display: flex;
+}
+header .menu {
+  display: flex;
+  margin-left: -22.6rem;
+}
+header .dropdown {
+  display: flex;
+  align-items: center;
+}
+header .dropdown .arrow-btn {
+  width: 10px;
+  height: 8px;
+}
+header .navbar-collapse ul li a {
+  color: #000000;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 3.8rem;
+  position: relative;
+  left: -125%;
+}
+header .new-png {
+  position: absolute;
+  top: 3px;
+  right: 164px;
+}
+header #nav-item1 {
+  margin-right: 39px;
+}
+header .navbar {
+  align-items: center;
+  background-color: #F8FBFD;
+}
+header .logo-box a {
+  margin-left: -45px;
+}
+header .login-box {
+  display: flex;
+}
+header .login-box .all {
+  display: flex;
+}
+header .login-box .login {
+  color: #000;
+  font-weight: 600;
+  margin-right: 20px;
+}
+header .login-box .register {
+  background-color: #3c7fff;
+  color: white;
+  border-radius: 4px;
+  width: 105px;
+  height: 40px;
+  text-align: center;
+  padding: 5.4px;
+  font-weight: bold;
+  display: inline-block;
+}
+header .login-box .all {
+  display: flex;
+}
+
+.banner {
+  padding: 100px 0;
+  justify-content: center;
+  background: url(https://api.pyproxy.com/static/index/img/index/img_banner1.png) #f8fcfe center;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  text-align: left;
+}
+.banner #banner-text {
+  margin-left: 8rem;
+}
+.banner .resources {
+  color: #3c7fff;
+  font-weight: bold;
+}
+.banner .t-title {
+  font-size: 48px;
+  max-width: 521px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+.banner .t-title span {
+  color: #3c7fff;
+}
+.banner .t-title1 {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #c8cbd4;
+}
+.banner .button-trial {
+  display: inline-block;
+  margin-top: 1rem;
+}
+.banner .trial-plan {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  color: white;
+  transition: all 0.2s;
+  font-family: "Ubuntu", sans-serif;
+}
+.banner .trial-plan:hover {
+  transform: scale(1.08);
+}
+
+.banner-card .all {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-card .cardd {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
