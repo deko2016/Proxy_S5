@@ -8,99 +8,203 @@ a {
   text-decoration: none;
 }
 
-header .navbar {
-  display: flex;
-  align-items: center;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
-header .navbar-collapse {
-  margin-left: 8rem;
-}
-header .nav-right .dropdown {
-  margin-left: 2rem;
-}
-header #navbar-expand {
-  margin-left: 4rem;
-}
-header .nav-right {
-  display: flex;
-  align-items: center !important;
-}
-header .lng-img {
-  align-items: center;
+header .collapse .opt1 {
+  padding-top: 15px;
   display: flex;
 }
-header .menu {
-  display: flex;
-  margin-left: -22.6rem;
-}
-header .dropdown {
-  display: flex;
-  align-items: center;
-}
-header .dropdown .arrow-btn {
-  width: 10px;
-  height: 8px;
-}
-header .navbar-collapse ul li a {
-  color: #000000;
-  font-weight: bold;
-  font-family: sans-serif;
-  margin-left: 3.8rem;
+header .collapse .opt1 .nav-img {
   position: relative;
-  left: -125%;
+  left: 8%;
 }
-header .new-png {
+header .collapse .nav-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+header .collapse .nav-desc {
+  font-size: 12px;
+  color: #a7aab0;
+  line-height: 1.2;
+  text-align: left;
+  max-width: 232px;
+}
+header .collapse .nav-content {
+  padding-left: 38px;
+}
+header .collapse nav ul {
+  padding: 0;
+  list-style: none;
+}
+header .collapse nav ul li {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  padding: 10px 43px;
+  bottom: 10%;
+}
+header .collapse nav ul li a {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+header .collapse nav ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+header .collapse .home-txt1 .home {
+  position: relative;
+}
+header .collapse .home-txt1 .home:after {
+  content: "";
   position: absolute;
-  top: 3px;
-  right: 164px;
+  width: 75%;
+  display: block;
+  height: 1.5px;
+  background-color: black;
+  bottom: -2px;
 }
-header #nav-item1 {
-  margin-right: 39px;
+header .collapse #resource .nav-content .nav-title {
+  text-align: center;
+}
+header .collapse #s5 img {
+  position: absolute;
+  top: -16px;
+  left: 45px;
+}
+header .collapse .sub-menu .home-txt {
+  position: relative;
+}
+header .collapse .sub-menu .home-txt:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1.5px;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+header .collapse .sub-menu .home-txt:hover:after {
+  width: 100%;
+}
+header .collapse nav ul li ul.dropdown-main {
+  min-width: 228%;
+  height: auto;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(37, 47, 63, 0.1);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  top: 109%;
+  position: absolute;
+  z-index: 999;
+  left: -57%;
+  transition: all 0.4s ease 0s;
+}
+header .collapse nav .sub-menu:hover .dropdown-main {
+  opacity: 1;
+  visibility: visible;
+}
+header .collapse nav ul li:hover ul.dropdown-main {
+  display: block;
+}
+header .collapse nav ul li ul.dropdown-main li {
+  display: block;
+}
+header .collapse .dropdown-main li a {
+  line-height: 1px;
+  font-size: 14px;
+  margin-right: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+header .collapse .dropdown-main li a:hover {
+  color: #ff497c;
+  transition: all 0.3s ease-in-out;
+}
+header .collapse .navbar {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: center;
+}
+header .collapse .sub-menu {
+  right: 3.5%;
+}
+header .collapse .sub-menu a i {
+  color: #bcbcbc;
+  font-size: 14px;
 }
 header .navbar {
+  padding: 7px;
+}
+header .right-context .dropdown {
+  display: flex;
   align-items: center;
-  background-color: #F8FBFD;
 }
-header .logo-box a {
-  margin-left: -45px;
+header .right-context .login {
+  color: black;
+  font-weight: bold;
 }
-header .login-box {
-  display: flex;
-}
-header .login-box .all {
-  display: flex;
-}
-header .login-box .login {
-  color: #000;
-  font-weight: 600;
-  margin-right: 20px;
-}
-header .login-box .register {
-  background-color: #3c7fff;
-  color: white;
-  border-radius: 4px;
+header .right-context .register {
   width: 105px;
   height: 40px;
-  text-align: center;
-  padding: 5.4px;
-  font-weight: bold;
+  line-height: 40px;
   display: inline-block;
+  box-sizing: border-box;
+  margin-left: 20px;
+  position: relative;
+  border-radius: 4px;
+  color: white;
+  background-color: #3c7fff;
+  font-weight: 600;
+  text-align: center;
 }
-header .login-box .all {
+header .hdr-context {
   display: flex;
+  align-items: center;
+}
+header .navbar-brand {
+  margin-left: 40px;
+}
+header #country .nav-img {
+  margin-top: 6px;
+}
+header .nav-item a {
+  font-style: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  margin: 0 36px;
+  position: relative;
+  left: -15%;
 }
 
 .banner {
-  padding: 100px 0;
+  padding: 320px 0;
+  width: 100%;
+  height: 100%;
   justify-content: center;
-  background: url(https://api.pyproxy.com/static/index/img/index/img_banner1.png) #f8fcfe center;
+  background: url(https://api.pyproxy.com/static/index/img/index/img_banner1.png) #f8fcfe no-repeat center;
   display: flex;
   align-items: center;
-  margin-top: 0px;
   text-align: left;
+  position: relative;
 }
 .banner #banner-text {
-  margin-left: 8rem;
+  position: absolute;
+  left: 9%;
+  top: 15%;
 }
 .banner .resources {
   color: #3c7fff;
@@ -136,10 +240,154 @@ header .login-box .all {
   transform: scale(1.08);
 }
 
-.banner-card .all {
+.banner-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
-.banner-card .cardd {
+.banner-card .card-image {
+  width: 100%;
+}
+.banner-card .card {
+  width: 295px;
+  height: 140px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.78);
+  box-shadow: 0px 14px 62px 0px #f4f8ff;
+}
+.banner-card .image {
+  width: 18.4%;
+}
+.banner-card .content {
+  padding-left: 20px;
+}
+.banner-card .card-body {
   display: flex;
+  align-items: center;
+}
+.banner-card .card-box {
+  margin-top: -4.4rem;
+  display: flex;
+  gap: 1.4rem;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  padding-left: 55px;
+}
+.banner-card .card-box .card-title {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+.banner-card .card-box .card-text {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgba(0, 0, 0, 0.502);
+}
+
+.featured {
+  padding: 180px 0;
+}
+.featured .outstd {
+  font-size: 16px;
+  color: #3c7fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+}
+.featured .ftr-right {
+  margin-left: 50px;
+  margin-top: -28px;
+}
+.featured .ftr-right span {
+  color: #3c7fff;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.featured .ftr-right .ftr {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.featured .ftr-card {
+  display: flex;
+  width: 560px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-left: 1.8rem;
+  margin-top: 1.5rem;
+}
+.featured .ftr-card .card {
+  border: none;
+}
+.featured .ftr-img {
+  display: flex;
+}
+.featured .ftr-description {
+  font-size: 14px;
+  max-width: 219px;
+  color: rgba(0, 0, 0, 0.502);
+  line-height: 1.286;
+  font-family: "Ubuntu", sans-serif;
+}
+.featured .ftr-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+}
+.featured .ftr-content {
+  margin-top: 3.5rem;
+}
+.featured #desc1 {
+  max-width: 217px;
+}
+
+.advantages .card {
+  border-radius: 2px;
+  margin: 20px 0;
+  background-color: #fff;
+  border: none;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+}
+.advantages .card .card-body:hover {
+  box-shadow: 0px 14px 43px 0px #f4f8ff;
+}
+.advantages .content {
+  margin-top: 2rem;
+}
+.advantages .all {
+  position: relative;
+}
+.advantages .left {
+  position: absolute;
+  top: -27%;
+  left: 3%;
+}
+.advantages .background {
+  position: relative;
+  top: -15%;
+}
+.advantages .card-body {
+  border: none;
+}
+.advantages .content .highl {
+  color: #3c7fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+}
+.advantages .content .adv span {
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  color: #3c7fff;
+  font-size: 32px;
+}
+.advantages .content .adv {
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

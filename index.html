@@ -1,126 +1,663 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PYPROXY</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PYPROXY</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-      <header>
-        <div class="navbar bg-white">
-          <nav id="navbar-expand" class="navbar navbar-expand-lg bg-white p-2">
-            <div class="container-fluid">
-                <div class="logo-box">
-                    <a href="https://pyproxy.com">
-                      <img src="https://api.pyproxy.com/static/index/img/header_logo.png" alt="">
-                    </a>
+  <header style="width: 100%;">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div id="hdr-context" class="container-fluid">
+        <a class="navbar-brand" href="https://pyproxy.com"><img style="border: none; outline: none;"
+            src="https://api.pyproxy.com/static/index/img/header_logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Get Proxies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Use Cases</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Locations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resources</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link">S5Proxy</a>
+                </li>
+              </ul> -->
+
+          <nav id="navbar" class="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="sub-menu">
+                <div class="home-txt1">
+                  <a href="#">Pricing
+                  </a>
                 </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li id="nav-item1" class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Pricing</a>
-                  </li>
-                  <li id="nav-item2" class="nav-item ">
-                    <a class="nav-link" href="#">Get Proxies</a>
-                  </li>
-                  <li id="nav-item2" class="nav-item ">
-                    <a class="nav-link" href="#">Use Cases</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Locations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Resources</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">S5Proxy</a>
-                    <img class="new-png" src="https://api.pyproxy.com/static/index/img/911/new.png" alt="">
-                  </li>
+
+                <ul class="dropdown-main">
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_quanqiuplan.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">Residential Proxies</p>
+                      <p class="nav-desc">25M+ dynamic IPs updated every day in 190+ regions</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_jingtaiplan.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">
+                        Static ISP Proxies</p>
+                      <p class="nav-desc">Combined the advantages of datacenter proxies and residential proxies</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_pricing3.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">Datacenter Proxies</p>
+                      <p class="nav-desc">Fast and reliable proxies hosted by servers in data center. Please fill a
+                        survey for our products development</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_pricing6.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">Unlimited Package
+                        <img style="height: 20px;margin-left: 5px;"
+                          src="https://api.pyproxy.com/static/index/img/unlimited_pendant.png" alt="sale">
+                      </p>
+                      <p class="nav-desc">Unlimited bandwidth on rotating residential proxies, random locations</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/911/nav_IPpacketage.png" alt="img">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">IPs-Amount Plan
+                        <img style="margin-left: 7px;" src="https://api.pyproxy.com/static/index/img/911/new.png"
+                          alt="img">
+                      </p>
+                      <p class="nav-desc">Global dynamic residential proxy,
+                        unlimited bandwidth and charged by IP number</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/zsdz.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">Customization</p>
+                      <p class="nav-desc">Customize a dedicated plan to your needs</p>
+                    </div>
+                  </a>
+
+
                 </ul>
+              </li>
+
+              <li class="sub-menu">
+                <a class="home-txt" href="#">Get Proxies
+
+                </a>
+                <ul style="min-width: 295px ;" class="dropdown-main">
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_quanqiuplan.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">API</p>
+                      <p class="nav-desc">Acquire IP + port through whitelist authentication</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_jingtaiplan.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">
+                        User & Pass Auth</p>
+                      <p class="nav-desc">Multiple proxy user accounts are supported</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_pricing3.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">PY Proxy Manager
+                        <img src="https://api.pyproxy.com/static/index/img/911/new.png" alt="img">
+                      </p>
+                      <p class="nav-desc">Download & partner with IPs-Amount Plan. Perfectly fulfills 911 S5 main
+                        features</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+                      <img src="https://api.pyproxy.com/static/index/img/nav_pricing6.png" alt="">
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">Technical Support
+                      </p>
+                      <p class="nav-desc">24/7 specialist technical support</p>
+                    </div>
+                  </a>
+
+
+
+                </ul>
+              </li>
+
+              <li class="sub-menu">
+                <a class="home-txt" href="#">Use Cases
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul style="min-width: 603px;left: -116%;" class="dropdown-main d-flex">
+                  <div style="margin-top:1rem;" class="content-left">
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/index/case_icon1.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">E-commerce</p>
+                        <p class="nav-desc">Support online business sailing to the world</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/index/case_icon3.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">
+                          SEO Monitoring</p>
+                        <p class="nav-desc">Search key words and gather SERPs to skyrocket your SEO rank</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/index/case_icon5.png" alt="img">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">
+                          Brand Protection
+                        </p>
+                        <p class="nav-desc">Escort brand to set sail on a long voyage</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div style="margin-top:0.4rem;" class="content-right">
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/index/case_icon5.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">Social Media Management
+                        </p>
+                        <p style="max-width: 230px;" class="nav-desc">Make your products to be the best-seller and
+                          well-known</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/index/case_icon4.png" alt="img">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">Market Research
+
+                        </p>
+                        <p class="nav-desc">Be fully prepared for market expansion</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/index/case_icon6.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">Web Scraping & Crawling
+                        </p>
+                        <p class="nav-desc">Collect any data from internet efficiently</p>
+                      </div>
+                    </a>
+                  </div>
+
+                </ul>
+              </li>
+
+              <li class="sub-menu">
+                <a class="home-txt" href="#">Locations
+                </a>
+                <ul style="min-width: 461px;left: -174%;" class="dropdown-main d-flex">
+                  <div style="margin-top:1rem;" id="country" class="content-left">
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/us.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">
+                          United States</p>
+                        <p class="nav-desc">7,629,408 IPs</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/ge.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">
+                          GERMANY</p>
+                        <p class="nav-desc">180,809 IPs</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/fr.png" alt="img">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">
+                          FRANCE
+                        </p>
+                        <p class="nav-desc">1,946,725 IPs</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/ja.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">
+                          JAPAN</p>
+                        <p class="nav-desc">180,809 IPs</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/mo.png" alt="img">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">
+                          MORE
+                        </p>
+                        <p class="nav-desc">All Location</p>
+                      </div>
+                    </a>
+
+                  </div>
+                  <div style="margin-top:1.2rem;" class="content-right">
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/t_ca.png" width="74px" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">CANADA
+                        </p>
+                        <p class="nav-desc">3,053,151 IPs</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/ko.png" alt="img">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">KOREA
+
+                        </p>
+                        <p class="nav-desc">175,406 IPs</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/br.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">BRITAIN
+                        </p>
+                        <p class="nav-desc">1,839,671 IPs</p>
+                      </div>
+                    </a>
+                    <a class="opt1" href="https://google.com">
+                      <div class="nav-img">
+                        <img src="https://api.pyproxy.com/static/index/img/in.png" alt="">
+                      </div>
+                      <div class="nav-content">
+                        <p class="nav-title">INDIA
+                        </p>
+                        <p class="nav-desc">
+                          4,360,047 IPs</p>
+                      </div>
+                    </a>
+                  </div>
+
+                </ul>
+
+              </li>
+
+              <li class="sub-menu">
+                <a class="home-txt" href="#">Resources
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul id="resource" style="min-width: 204px;left: -17%;" class="dropdown-main">
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">FAQ</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">
+                        Proxy Guides</p>
+                    </div>
+                  </a>
+                  <a class="opt1" href="https://google.com">
+                    <div class="nav-img">
+
+                    </div>
+                    <div class="nav-content">
+                      <p class="nav-title">Blog
+
+                      </p>
+
+                    </div>
+                  </a>
+                </ul>
+              </li>
+
+              <li class="sub-menu">
+                <a id="s5" class="home-txt" href="#">S5Proxy
+                  <img src="https://api.pyproxy.com/static/index/img/911/new.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="right-context mx-auto">
+            <div class="dropdown">
+              <div class="logo">
+                <img src="https://api.pyproxy.com/static/index/img/language.png" alt="Logo">
               </div>
+              <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li><a style="text-align: center;" class="dropdown-item" href="#">English</a></li>
+                <li><a style="text-align: center;" class="dropdown-item" href="#">Portugues</a></li>
+                <li><a style="text-align: center;" class="dropdown-item" href="#">Spanish</a></li>
+              </ul>
+              <a class="login" href="">Log In</a>
+              <a class="register" href="">Sign Up</a>
             </div>
-            <nav class="nav-right">
-          
-          
-
-            
-        </nav>
-          
-        </nav>
-
-        
-        
-        
-        
-      </header>  
-
-      <section class="banner">
-        <div id="banner-text" class="container">  
-              <p class="resources">RESOURCES AVAILABLE</p>
-              <h1 class="t-title">
-                Market-Leading Proxy
-                Solution Provides
-                <span>Tens of Millions of IP</span>
-                Resources
-              </h1>
-              <h2 class="t-title1">
-                Commercial residential and ISP proxy network includes 90M+ IPs around the world
-              </h2>
-              <a class="button-trial" href=""><button type="button" class="btn btn-primary trial-plan">GET TRIAL PLAN</button></a>      
-        </div>
-        
-      </section>
-      <div class="banner-card">
-        <div class="all">
-          <div class="card">
-           
-            <div class="cardd">
-              <a class="item" href="">
-                <img src="https://api.pyproxy.com/static/index/img/index/img_xieyi.png" alt="">
-                <div class="content">
-                  <p class="tit">100,000+</p>
-                  <p class="name">Customers Worldwide</p>
-                </div>
-              </a>
-              <a class="item" href="">
-                <img src="https://api.pyproxy.com/static/index/img/index/img_xieyi.png" alt="">
-                <div class="content">
-                  <p class="tit">100,000+</p>
-                  <p class="name">Customers Worldwide</p>
-                </div>
-              </a>
-              <a class="item" href="">
-                <img src="https://api.pyproxy.com/static/index/img/index/img_xieyi.png" alt="">
-                <div class="content">
-                  <p class="tit">100,000+</p>
-                  <p class="name">Customers Worldwide</p>
-                </div>
-              </a>
-              <a class="item" href="">
-                <img src="https://api.pyproxy.com/static/index/img/index/img_xieyi.png" alt="">
-                <div class="content">
-                  <p class="tit">100,000+</p>
-                  <p class="name">Customers Worldwide</p>
-                </div>
-              </a>
-
-            </div>
-           
           </div>
         </div>
-        
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="banner">
+    <div class="banner-page">
+      <div id="banner-text" class="container">
+        <p class="resources">RESOURCES AVAILABLE</p>
+        <h1 class="t-title">
+          Market-Leading Proxy
+          Solution Provides
+          <span>Tens of Millions of IP</span>
+          Resources
+        </h1>
+        <h2 class="t-title1">
+          Commercial residential and ISP proxy network includes 90M+ IPs around the world
+        </h2>
+        <a class="button-trial" href=""><button type="button" class="btn btn-primary trial-plan">GET TRIAL
+            PLAN</button></a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <div class="banner-card">
+    <div class="card-box">
+      <div class="card">
+        <div class="card-body">
+          <div class="image">
+            <img class="card-image" src="https://api.pyproxy.com/static/index/img/index/img_xieyi.png" alt="Card-Image">
+
+          </div>
+          <div class="content">
+            <h5 class="card-title">100,000+</h5>
+            <p class="card-text">Customers Worldwide</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="image">
+            <img class="card-image" src="https://api.pyproxy.com/static/index/img/index/img_ipchi.png" alt="Card-Image">
+
+          </div>
+          <div class="content">
+            <h5 class="card-title">95,645,231 IPs</h5>
+            <p class="card-text">Around the World</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="image">
+            <img class="card-image" src="https://api.pyproxy.com/static/index/img/index/img_jishuzhichi.png"
+              alt="Card-Image">
+
+          </div>
+          <div class="content">
+            <h5 class="card-title">Stable & Reliable</h5>
+            <p class="card-text">Proxy Resources</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="image">
+            <img class="card-image" src="https://api.pyproxy.com/static/index/img/index/img_guolv.png" alt="Card-Image">
+
+          </div>
+          <div class="content">
+            <h5 class="card-title">Technical Support</h5>
+            <p class="card-text">24/7 Service</p>
+          </div>
+
+        </div>
       </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/script/app.js"></script>
+    </div>
+
+  </div>
+
+  <div class="featured">
+    <div class="all">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ftr-left">
+              <img src="https://api.pyproxy.com/static/index/img/index/img_tedian.png" alt="">
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ftr-right">
+              <p class="outstd">OUTSTANDING</p>
+              <span class="proxy">PYPROXY</span>
+              <b class="ftr">Features</b>
+              <div class="ftr-card">
+                <div class="card">
+                  <div class="ftr-img">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_wendinggaoxiao.png" alt="Img">
+                  </div>
+                  <div class="ftr-content">
+                    <p class="ftr-title">Stable & Efficient</p>
+                    <p class="ftr-description">
+                      Abundant bandwidth support business demands. Real-time speed can reach 1M-5M/s. 99% success rate
+                      guarantee data collection activities.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="ftr-img">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_wuxiandioayong.png" alt="Img">
+                  </div>
+                  <div class="ftr-content">
+                    <p class="ftr-title">Unlimited Sessions</p>
+                    <p id="desc1" class="ftr-description">
+                      There is no limit to the number of uses or invocation frequencies of the proxies. You can generate
+                      huge amounts of proxies at one time.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="ftr-img">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_caozuobianjie.png" alt="Img">
+                  </div>
+                  <div class="ftr-content">
+                    <p class="ftr-title">Convenient Operation</p>
+                    <p class="ftr-description">
+                      Provide various API parameter configurations. Generate proxies by the method of username &
+                      password authentication, convenient and fast.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="ftr-img">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_anquangaomi.png" alt="Img">
+                  </div>
+                  <div class="ftr-content">
+                    <p class="ftr-title">Safe & Anonymous</p>
+                    <p class="ftr-description">
+                      Get highly anonymous real residential IPs and your privacy safety completely protected. Your real
+                      network environment won't be acquired at any time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="advantages">
+    <div class="container">
+      <div class="row">
+        <div class="all d-flex">
+          <div class="col-lg-6">
+            <div class="left">
+            <div class="content">
+              <p class="highl">HIGHLIGHTS</p>
+              <p class="adv">
+                <span>PYPROXY</span>  
+                Advantages</p>
+            </div>
+            <div style="border: none;" class="card">
+              <div class="card" style="width: 560px;height: 167px;">
+                <div class="card-body">
+                  <div class="card-image">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_1.png" alt="img">
+                  </div>
+                  <p class="card-title">Super-High Concurrency
+                  </p>
+                  <p class="card-text">Exclusive high-performance server requests access in real residential addresses,
+                    maintains normal connection of the proxies. Unlimited concurrency reduces business cost and improves
+                    operation efficiency.</p>
+
+                </div>
+              </div>
+              <div class="card" style="width: 560px;height: 167px;">
+                <div class="card-body">
+                  <div class="card-image">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_2.png" alt="img">
+                  </div>
+                  <p class="card-title">Quality IP Resources
+                  </p>
+                  <p class="card-text">Gather 90M+ real residential IPs in PYPROXY IP pools. Constantly updating IPs have access to geo-restricted content from specific locations around the world. Self-managed data nodes integrate network fast and efficiently.</p>
+
+                </div>
+              </div>
+              <div class="card" style="width: 560px;height: 167px;">
+                <div class="card-body">
+                  <div class="card-image">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_3.png" alt="img">
+                  </div>
+                  <p class="card-title">Multiple Proxy Forms
+                  </p>
+                  <p class="card-text">Provide multiple proxy generating and authentication modes help to flexibly set elements of proxy. In account authentication, sessions, state and cities can be determined by adding according parameters.</p>
+
+                </div>
+              </div>
+              <div class="card" style="width: 560px;height: 167px;">
+                <div class="card-body">
+                  <div class="card-image">
+                    <img src="https://api.pyproxy.com/static/index/img/index/img_4.png" alt="img">
+                  </div>
+                  <p class="card-title">Custom Service
+                  </p>
+                  <p class="card-text">Support customizing exclusive IP proxy plan according to scenarios. Gigabit high-speed bandwidth and extensible features available. Custom plan can provide traffic usage reports and trace traffic records.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <div class="back-right">
+              <div class="background">
+                <img src="https://api.pyproxy.com/static/index/img/index/img_youshi.png" alt="background">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/script/app.js"></script>
 </body>
+
 </html>
